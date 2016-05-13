@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "name": "home",
+      "url": "/",
+      "controller": "Controllers\\HomeController",
+      "method" : "index"
+    },
+    {
+      "name": "404",
+      "url": "/404",
+      "controller": "Controllers\\ErrorsController",
+      "method" : "error404"
+    },
+    {
+      "name" : "404_ajax",
+      "url": "/404-ajax",
+      "controller" : "Controllers\\ErrorsController",
+      "method" : "errorAjax404"
+    }
+  ]
+}

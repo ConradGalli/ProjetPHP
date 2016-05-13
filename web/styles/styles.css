@@ -1,0 +1,326 @@
+body {
+    min-width: 1024px;
+    background-color: azure;
+    font-family: 'Arimo';
+}
+#main-wrapper {
+    width:1024px;
+    margin: auto;
+    padding-top: 180px;
+    -webkit-transition: ease .2s;
+    -moz-transition: ease .2s;
+    -ms-transition: ease .2s;
+    -o-transition: ease .2s;
+    transition: ease .2s;
+}
+#main-wrapper.visible-menu {
+    padding-top: 250px;
+}
+
+/******* HEADER *******/
+#main-header {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    min-width: 1024px;
+    height: 150px;
+}
+#main-header-banner {
+    position: relative;
+    height: 125px;
+    background: url(/styles/img/background.jpg) no-repeat center top;
+    background-size:cover;
+    border-bottom: 1px solid white;
+    -webkit-box-shadow: 0 0 5px lightgrey;
+    -moz-box-shadow: 0 0 5px lightgrey;
+    box-shadow: 0 0 5px lightgrey;
+    z-index:100;
+}
+#main-header-banner h1, #main-header-banner h2, #main-header-banner div {
+    width: 1024px;
+    margin: auto;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px grey;
+}
+#main-header-banner h1 {
+    text-transform: uppercase;
+    font-size: 16pt;
+    letter-spacing: .3em;
+}
+#main-header-banner h2 {
+    font-size: 14pt;
+    letter-spacing: .2em;
+}
+
+/****** MAIN MENU ******/
+#button-main-menu {
+    cursor: pointer;
+    width: auto!important;
+    font-size: 16pt;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    -webkit-transition: ease .1s;
+    -moz-transition: ease .1s;
+    -ms-transition: ease .1s;
+    -o-transition: ease .1s;
+    transition: ease .1s;
+}
+#button-main-menu:hover {
+    text-shadow: 0 0 5px white;
+    letter-spacing: .4em;
+}
+#button-main-menu:active {
+    color:black;
+    letter-spacing: .2em;
+}
+#main-menu {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background: url(/styles/img/background.jpg) no-repeat center top;
+    background-size:cover;
+    border-bottom: 1px solid white;
+    -webkit-box-shadow: 0 0 5px lightgrey;
+    -moz-box-shadow: 0 0 5px lightgrey;
+    box-shadow: 0 0 5px lightgrey;
+    -webkit-transition: ease .2s;
+    -moz-transition: ease .2s;
+    -ms-transition: ease .2s;
+    -o-transition: ease .2s;
+    transition: ease .2s;
+    text-align: center;
+    z-index: 50;
+    top:75px;
+}
+#main-menu.visible-menu {
+    top:125px;
+}
+#main-menu li {
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+#main-menu li a {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: ease .1s;
+    -moz-transition: ease .1s;
+    -ms-transition: ease .1s;
+    -o-transition: ease .1s;
+    transition: ease .1s;
+}
+#main-menu li a:hover {
+    text-shadow: 0 0 5px white;
+}
+#main-menu li a:active {
+    color:black;
+}
+
+/******* CONTENT *******/
+.bloc {
+    display: block;
+    position: relative;
+    background: white;
+    -webkit-box-shadow: 1px 1px 5px lightgrey;
+    -moz-box-shadow: 1px 1px 5px lightgrey;
+    box-shadow: 1px 1px 5px lightgrey;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.bloc h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: .2em;
+}
+
+/******* FORMS *******/
+.group-form {
+    display: block;
+    margin-bottom: 20px;
+}
+.no-style .group-form {
+    margin:0!important;
+}
+.group-form label {
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: .1em;
+}
+.group-form input, .group-form select {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid lightgrey;
+    padding: 5px;
+    border-radius: 5px;
+}
+.group-form li {
+    margin-bottom: 5px;
+}
+.group-form input[type=submit] {
+    text-transform: uppercase;
+    font-size: 10pt;
+    letter-spacing: .2em;
+    padding: 10px 25px;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    -webkit-transition: ease .2s;
+    -moz-transition: ease .2s;
+    -ms-transition: ease .2s;
+    -o-transition: ease .2s;
+    transition: ease .2s;
+}
+.group-form input[type=submit]:hover {
+    background-color: blue;
+}
+.group-form input[type=submit]:active {
+    color: blue;
+    background-color: white;
+}
+.small-input {
+    width: 60px!important;
+    margin: 0!important;
+    margin-right: 25px!important;
+}
+.form-ok input {
+    border: 1px solid lightblue;
+    -webkit-box-shadow: inset 0 0 10px lightblue;
+    -moz-box-shadow: inset 0 0 10px lightblue;
+    box-shadow: inset 0 0 10px lightblue;
+}
+.form-not-ok input {
+    border: 1px solid orangered;
+    -webkit-box-shadow: inset 0 0 10px orangered;
+    -moz-box-shadow: inset 0 0 10px orangered;
+    box-shadow: inset 0 0 10px orangered;
+}
+.group-form .validate-icon {
+    display:block;
+    position: absolute;
+    height:27px;
+    width: 27px;
+}
+.group-form .validate-icon.small-icon {
+    height:24px;
+    width: 24px;
+}
+.group-form.form-not-ok .validate-icon {
+    display:block;
+    background: url(/styles/img/nocheck.png) no-repeat center center;
+    background-size: 27px 27px;
+}
+.group-form.form-ok .validate-icon {
+    display:block;
+    background: url(/styles/img/check.png) no-repeat center center;
+    background-size: 27px 27px;
+}
+.group-form.form-not-ok .validate-icon.small-icon {
+    background-size: 20px 20px;
+}
+.group-form.form-ok .validate-icon.small-icon {
+    background-size: 20px 20px;
+}
+
+    /***** TABLE ******/
+table.nice-table:not(.no-style) {
+    display: block;
+    margin-bottom: 25px;
+}
+table.nice-table thead {
+    font-weight: bold;
+    color: white;
+    background: blue url(/styles/img/background-mini.jpg) no-repeat center top;
+    background-size: cover;
+}
+table.nice-table td:not(.no-style)  {
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+table.nice-table td .group-form .date-form:not(.no-style)  {
+    width: 60px;
+}
+table.nice-table td:not(.no-style)  .group-form, table.nice-table td:not(.no-style)  .group-form input, table.nice-table td:not(.no-style)  .group-form select {
+    font-size:8pt;
+}
+table.nice-table td.no-style {
+    width: 100px;
+}
+table.nice-table td.no-style .date-form.no-style {
+    width: 60px;
+}
+table.nice-table td.no-style.big {
+    width: 200px;
+}
+table.nice-table td.no-style.big .date-form.no-style {
+    width: 100px;
+}
+#edit-form input[type=text] {
+    width: 70px;
+}
+
+/***** POPUP *****/
+#popup-wrapper {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(50,50,50,0.5);
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 8pt;
+}
+
+#popup {
+    display: block;
+    position: relative;
+    z-index: 1500;
+    min-width: 500px;
+    max-width: 1024px;
+    background-color: white;
+    padding: 25px;
+    border: 3px solid lightgrey;
+    margin: 250px auto;
+}
+
+#popup .errors {
+    font-size: 12pt;
+    color: darkred;
+}
+#popup .messages {
+    font-size: 12pt;
+    color: blue;
+}
+
+/***** PAGE ACCUEIL *****/
+#welcome {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: .1em;
+    text-shadow: 0 0 5px grey;
+}
+
+#welcome p {
+    margin-bottom: 40px;
+}
+#welcome img {
+    display: block;
+    width: 500px;
+    margin: auto;
+    border : 3px solid black;
+    -webkit-box-shadow: 3px 3px 3px grey;
+    -moz-box-shadow: 3px 3px 3px grey;
+    box-shadow: 3px 3px 3px grey;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,1 @@
+{* web/templates/layout/footer.tpl *}

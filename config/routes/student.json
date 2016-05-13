@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "name": "student-edit",
+      "url": "/student/edit",
+      "controller": "Controllers\\StudentController",
+      "method": "editIndex"
+    },
+    {
+      "name": "student-delete",
+      "url": "/student/delete",
+      "controller": "Controllers\\StudentController",
+      "method": "deleteIndex"
+    },
+    {
+      "name": "student-create",
+      "url": "/student/create",
+      "controller": "Controllers\\StudentController",
+      "method": "createIndex"
+    }
+  ]
+}

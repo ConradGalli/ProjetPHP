@@ -1,0 +1,21 @@
+{
+  "name": "charlesroman/ProjetPHP_AFIP",
+  "description": "Personnal Project for PHP Exam",
+  "authors": [
+    {
+      "name": "Charles Roman",
+      "email": "charlesroman.web@gmail.com"
+    }
+  ],
+  "require": {
+    "smarty/smarty": "~3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/",
+      "Controllers\\": "src/controllers",
+      "Entities\\": "src/entities",
+      "Core\\": "src/core"
+    }
+  }
+}
